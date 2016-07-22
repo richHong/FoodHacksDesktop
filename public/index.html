@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <button id='github_login'>Github</button>
+  <button id='github_logout'>Logout</button>
+
+
+<script>
+  var el = document.getElementById('github_login');
+  el.onclick = function() {
+    window.location.href = '//localhost:3000/auth/github'
+  }
+  //needs to be configured
+  var el2 = document.getElementById('github_logout');
+  el2.onclick = function() {
+    window.location.href = '//localhost:3000/logout'
+  }
+</script>
+</body>
+</html>
